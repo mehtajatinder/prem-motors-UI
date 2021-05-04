@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #e6e6e6;
+}
+.abc .col{
+    margin-top:20px;
+}
+.abc .col div{
+    background-color: #ddd;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.sliderWrap{
+    height:450px;
+    background-image: url(assets/sliderIamges/spare-1.jpg);
+    background-position: center;
+    background-size: contain;
+    position: relative;
+
+}
+.sliderWrap:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.outerForm{
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+    background: #fff;
+    width: 350px;
+    top: 8%;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    background-color: rgb(181 151 107 / 74%)
+}
+
+.btn.btn-theme{
+    background-color: #bd9c61;
+    border-color: #bd9c61;;
+}
+.bg-white{
+    background-color: #fff;
+}
+.negativeMargins{
+    margin-right: -15px;
+    margin-left: -15px;    
+}
