@@ -6,14 +6,21 @@ body{
     margin-top:20px;
 }
 .abc .col div{
-    background-color: #ddd;
+    background-color: #e7e7e7;
     display: flex;
     height: 100px;
     justify-content: center;
     align-items: center;
+    border-radius: 6px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+    transition: transform .3s ease-out;
+    cursor:pointer
+}
+.abc .col div:hover{
+    transform: translate(0, -5px);
 }
 .sliderWrap{
-    height:450px;
+    height:480px;
     background-image: url(assets/sliderIamges/spare-1.jpg);
     background-position: center;
     background-size: contain;
@@ -28,16 +35,15 @@ body{
     background-color: rgba(0,0,0,0.6);
 }
 .outerForm{
-    position: absolute;
-    right: 20px;
-    z-index: 1;
+    position: relative;
     background: #fff;
     width: 350px;
-    top: 8%;
     border-radius: 10px;
     color: #fff;
     padding: 20px;
-    background-color: rgb(181 151 107 / 74%)
+    background-color: rgb(181 151 107 / 74%);
+    float: right;
+    margin-top: 50px;
 }
 
 .btn.btn-theme{
